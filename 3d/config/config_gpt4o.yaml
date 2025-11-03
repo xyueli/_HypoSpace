@@ -1,0 +1,25 @@
+llm:
+  type: local_huggingface
+  models:
+    local_huggingface: "/opt/data/private/models/Qwen3-4B-Instruct-2507"
+    openrouter: "qwen/qwen3-4b-instruct-2507"
+    openai: Null
+    anthropic: Null
+  api_keys:
+    openrouter: "sk-local-dummy-key"
+    openai: ""
+    anthropic: ""
+  base_url: "http://localhost:8000/v1"
+  temperature: 0.7
+  # 本地模型配置
+  local_model:
+    model_path: "/opt/data/private/models/Qwen3-4B-Instruct-2507"
+    device: "cuda"  # 或 "cpu" 如果没有GPU
+    max_new_tokens: 2048
+    trust_remote_code: true
+
+benchmark:
+  checkpoint: "checkpoints"
+  verbose: true
+  output_pattern: "results/{dataset_name}_{model}.json"
+
