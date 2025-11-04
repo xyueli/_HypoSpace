@@ -1,0 +1,555 @@
+{
+  "run_id": "20251102_092037",
+  "llm_name": "LoRA-Qwen3-4B(lora_output_qwen3_balanced)",
+  "n_samples": 100,
+  "n_queries_per_sample": null,
+  "query_multiplier": 1.0,
+  "seed": 33550336,
+  "timestamp": "2025-11-02T09:20:41.865132",
+  "results": [
+    {
+      "observation_set_id": "n3_1735",
+      "n_observations": 3,
+      "n_ground_truths": 3,
+      "n_queries": 3,
+      "n_valid": 3,
+      "n_unique_valid": 3,
+      "n_unique_all": 3,
+      "n_recovered_gts": 3,
+      "parse_success_count": 3,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ],
+            [
+              "D",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ],
+            [
+              "D",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ],
+            [
+              "D",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ],
+            [
+              "D",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ],
+            [
+              "D",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ],
+            [
+              "D",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C, D, E\nConstraint: The graph should have at most 10 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:0 C:1 D:1 E:0\nPerturb(B) -> A:0 B:0 C:0 D:0 E:1\nPerturb(C) -> A:0 B:0 C:0 D:0 E:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: A->C, A->D, B->E",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ]
+          ],
+          "hash": "9746a7806fc6cb9c18d8462221711964"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: A->C, A->D, B->E",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "A",
+                "D"
+              ],
+              [
+                "B",
+                "E"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: A->C, A->D, B->E, D->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "A",
+                "D"
+              ],
+              [
+                "B",
+                "E"
+              ],
+              [
+                "D",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 2,
+            "response": "Graph: A->D, B->E, D->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "D"
+              ],
+              [
+                "B",
+                "E"
+              ],
+              [
+                "D",
+                "C"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n3_989",
+      "n_observations": 3,
+      "n_ground_truths": 1,
+      "n_queries": 1,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_count": 1,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ],
+            [
+              "C",
+              "D"
+            ],
+            [
+              "C",
+              "E"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ],
+            [
+              "C",
+              "D"
+            ],
+            [
+              "C",
+              "E"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ],
+            [
+              "C",
+              "D"
+            ],
+            [
+              "C",
+              "E"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C, D, E\nConstraint: The graph should have at most 10 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:0 C:0 D:1 E:0\nPerturb(B) -> A:0 B:0 C:0 D:0 E:1\nPerturb(C) -> A:0 B:0 C:0 D:1 E:1\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: A->D, B->E, C->D, C->E",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "edges": [
+            [
+              "A",
+              "D"
+            ],
+            [
+              "B",
+              "E"
+            ],
+            [
+              "C",
+              "D"
+            ],
+            [
+              "C",
+              "E"
+            ]
+          ],
+          "hash": "c6b39e8da507862e6001de0182d66936"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: A->D, B->E, C->D, C->E",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "D"
+              ],
+              [
+                "B",
+                "E"
+              ],
+              [
+                "C",
+                "D"
+              ],
+              [
+                "C",
+                "E"
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "total_prompt_tokens": 0,
+  "total_completion_tokens": 0,
+  "total_tokens": 0,
+  "total_cost": 0.0,
+  "all_errors": [],
+  "total_error_counts": {}
+}

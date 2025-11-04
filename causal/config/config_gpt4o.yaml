@@ -1,0 +1,17 @@
+llm:
+  type: local
+  model_path: "/opt/data/private/Qwen3-4B-Instruct-2507"
+  models:
+    openrouter: "deepseek/deepseek-r1"
+    openai: Null
+    anthropic: Null
+  api_keys:
+    openrouter: "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"
+    openai: ""
+    anthropic: ""
+  temperature: 0.7
+
+benchmark:
+  checkpoint: "checkpoints"
+  verbose: true
+  output_pattern: "results/{dataset_name}_{model}.json"

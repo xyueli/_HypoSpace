@@ -1,0 +1,10 @@
+llm:
+  type: local
+  base_model: "/opt/data/private/Qwen3-4B-Instruct-2507"
+  model_path: "/opt/data/private/_HypoSpace-main/causal/finetuning/lora_output_qwen3_balanced"
+  temperature: 0.9
+
+benchmark:
+  checkpoint: "checkpoints"
+  verbose: true
+  output_pattern: "results/{dataset_name}_finetuned.json"

@@ -1,0 +1,5343 @@
+{
+  "run_id": "20251103_083931",
+  "llm_name": "LoRA-Qwen3-4B(lora_output_qwen3_balanced)",
+  "n_samples": 25,
+  "n_queries_per_sample": null,
+  "query_multiplier": 1.0,
+  "query_mode": "adaptive_1.0x",
+  "seed": 33550336,
+  "timestamp": "2025-11-03T08:40:10.576985",
+  "max_edges_constraint": 3,
+  "statistics": {
+    "parse_success_rate": {
+      "mean": 1.0,
+      "std": 0.0,
+      "var": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "p_value": 0.0
+    },
+    "valid_rate": {
+      "mean": 0.8806666666666666,
+      "std": 0.24538767514101256,
+      "var": 0.06021511111111111,
+      "min": 0.25,
+      "max": 1.0,
+      "p_value": 3.262625688396524e-15
+    },
+    "novelty_rate": {
+      "mean": 0.8253333333333334,
+      "std": 0.2159794228881796,
+      "var": 0.04664711111111111,
+      "min": 0.4166666666666667,
+      "max": 1.0,
+      "p_value": 7.98272835974316e-16
+    },
+    "recovery_rate": {
+      "mean": 0.7393333333333334,
+      "std": 0.274990100831931,
+      "var": 0.07561955555555558,
+      "min": 0.25,
+      "max": 1.0,
+      "p_value": 1.7755587637332876e-12
+    }
+  },
+  "token_usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "avg_tokens_per_sample": 0.0,
+    "avg_tokens_per_query": 0.0
+  },
+  "cost": {
+    "total_cost": 0.0,
+    "avg_cost_per_sample": 0.0,
+    "avg_cost_per_query": 0.0
+  },
+  "error_summary": {
+    "total_errors": 0,
+    "error_types": {},
+    "error_rate": 0.0
+  },
+  "per_sample_results": [
+    {
+      "observation_set_id": "n1_002",
+      "n_observations": 1,
+      "n_ground_truths": 4,
+      "n_queries": 4,
+      "n_valid": 4,
+      "n_unique_valid": 3,
+      "n_unique_all": 3,
+      "n_recovered_gts": 3,
+      "parse_success_count": 4,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.75,
+      "recovery_rate": 0.75,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:0 C:1\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: A->C, B->A",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ]
+          ],
+          "hash": "5ad3100f82af76718106728f1e9f8472"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: A->C, B->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: A->C, B->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "query_index": 2,
+            "response": "Graph: A->C, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 3,
+            "response": "Graph: A->C, B->A, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n3_008",
+      "n_observations": 3,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 2,
+      "n_unique_valid": 2,
+      "n_unique_all": 2,
+      "n_recovered_gts": 2,
+      "parse_success_count": 2,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:0 C:0\nPerturb(B) -> A:1 B:0 C:0\nPerturb(C) -> A:1 B:1 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: B->A, C->A, C->B",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ],
+          "hash": "8a7b1fca9c86846d287ed784ef18c990"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: B->A, C->A, C->B",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: B->A, C->B",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n1_009",
+      "n_observations": 1,
+      "n_ground_truths": 12,
+      "n_queries": 12,
+      "n_valid": 12,
+      "n_unique_valid": 5,
+      "n_unique_all": 5,
+      "n_recovered_gts": 5,
+      "parse_success_count": 12,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.4166666666666667,
+      "recovery_rate": 0.4166666666666667,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(C) -> A:0 B:0 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: A->B, A->C",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ],
+          "hash": "107d8f39871d53b1316b0b46729b8b84"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: A->B, A->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: A->C, B->A, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 2,
+            "response": "Graph: A->C, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 3,
+            "response": "Graph: A->B, A->C, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 4,
+            "response": "Graph: A->C, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n3_002",
+      "n_observations": 3,
+      "n_ground_truths": 1,
+      "n_queries": 1,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_count": 1,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:0 C:0\nPerturb(B) -> A:0 B:0 C:0\nPerturb(C) -> A:0 B:1 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: C->B",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "B"
+            ]
+          ],
+          "hash": "1b4c04175f9c612a9d2976dfb662807f"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: C->B",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n2_003",
+      "n_observations": 2,
+      "n_ground_truths": 4,
+      "n_queries": 4,
+      "n_valid": 4,
+      "n_unique_valid": 3,
+      "n_unique_all": 3,
+      "n_recovered_gts": 3,
+      "parse_success_count": 4,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.75,
+      "recovery_rate": 0.75,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:0 C:0\nPerturb(B) -> A:1 B:0 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: B->A, C->A, C->B",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ],
+          "hash": "8a7b1fca9c86846d287ed784ef18c990"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: B->A, C->A, C->B",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: B->A, C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "query_index": 2,
+            "response": "Graph: B->A, C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "query_index": 3,
+            "response": "Graph: B->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n1_006",
+      "n_observations": 1,
+      "n_ground_truths": 4,
+      "n_queries": 4,
+      "n_valid": 4,
+      "n_unique_valid": 3,
+      "n_unique_all": 3,
+      "n_recovered_gts": 3,
+      "parse_success_count": 4,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.75,
+      "recovery_rate": 0.75,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(B) -> A:0 B:0 C:1\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: B->C",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "hash": "f86bdf502516b9c19f03836cea93efb2"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 2,
+            "response": "Graph: A->B, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 3,
+            "response": "Graph: A->C, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n2_021",
+      "n_observations": 2,
+      "n_ground_truths": 4,
+      "n_queries": 4,
+      "n_valid": 4,
+      "n_unique_valid": 2,
+      "n_unique_all": 2,
+      "n_recovered_gts": 2,
+      "parse_success_count": 4,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.5,
+      "recovery_rate": 0.5,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": []
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(B) -> A:0 B:0 C:0\nPerturb(C) -> A:0 B:0 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: No edges",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [],
+          "hash": "ea7082dc19e7bb6be368b3a8cc9eda5c"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: No edges",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": []
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: No edges",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": []
+          },
+          {
+            "query_index": 2,
+            "response": "Graph: A->B, A->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 3,
+            "response": "Graph: A->B, A->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n3_016",
+      "n_observations": 3,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 2,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_count": 2,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.5,
+      "recovery_rate": 0.5,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:1 C:0\nPerturb(B) -> A:0 B:0 C:0\nPerturb(C) -> A:1 B:1 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: A->B, C->A",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ],
+          "hash": "ef2e0d4100033a4a0dd53e04394d4ee6"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: A->B, C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: A->B, C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n2_006",
+      "n_observations": 2,
+      "n_ground_truths": 1,
+      "n_queries": 1,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_count": 1,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:0 C:0\nPerturb(C) -> A:0 B:1 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: C->B",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "B"
+            ]
+          ],
+          "hash": "1b4c04175f9c612a9d2976dfb662807f"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: C->B",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n2_026",
+      "n_observations": 2,
+      "n_ground_truths": 1,
+      "n_queries": 1,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_count": 1,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(B) -> A:1 B:0 C:0\nPerturb(C) -> A:0 B:0 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: B->A",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ]
+          ],
+          "hash": "652a53d0783a8ac6205ad9630b5608e8"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: B->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n2_024",
+      "n_observations": 2,
+      "n_ground_truths": 3,
+      "n_queries": 3,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 2,
+      "n_recovered_gts": 1,
+      "parse_success_count": 3,
+      "parse_success_rate": 1.0,
+      "valid_rate": 0.3333333333333333,
+      "novelty_rate": 0.6666666666666666,
+      "recovery_rate": 0.3333333333333333,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(B) -> A:0 B:0 C:0\nPerturb(C) -> A:1 B:1 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: C->A, C->B",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ],
+          "hash": "ed012d01fe298f0b07846521f44c7bce"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: C->A, C->B",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "C",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: C->B",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "query_index": 2,
+            "response": "Graph: C->B",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "C",
+                "B"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n3_009",
+      "n_observations": 3,
+      "n_ground_truths": 1,
+      "n_queries": 1,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_count": 1,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:0 C:0\nPerturb(B) -> A:1 B:0 C:1\nPerturb(C) -> A:0 B:0 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: B->A, B->C",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "hash": "d6932dc8e565adb7eb1852392a186a19"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: B->A, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n2_023",
+      "n_observations": 2,
+      "n_ground_truths": 1,
+      "n_queries": 1,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_count": 1,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(B) -> A:0 B:0 C:0\nPerturb(C) -> A:1 B:0 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: C->A",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "C",
+              "A"
+            ]
+          ],
+          "hash": "7deb99d24ad7b045522e13c77e5f3e8c"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n3_011",
+      "n_observations": 3,
+      "n_ground_truths": 1,
+      "n_queries": 1,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_count": 1,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:0 C:1\nPerturb(B) -> A:0 B:0 C:0\nPerturb(C) -> A:0 B:0 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: A->C",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ]
+          ],
+          "hash": "5927e00a695de742eb7bbe7330ee1050"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: A->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n2_016",
+      "n_observations": 2,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 2,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_count": 2,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.5,
+      "recovery_rate": 0.5,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:1 C:0\nPerturb(C) -> A:1 B:1 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: A->B, C->A",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ],
+          "hash": "ef2e0d4100033a4a0dd53e04394d4ee6"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: A->B, C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: A->B, C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n3_017",
+      "n_observations": 3,
+      "n_ground_truths": 1,
+      "n_queries": 1,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_count": 1,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:1 C:1\nPerturb(B) -> A:0 B:0 C:0\nPerturb(C) -> A:0 B:0 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: A->B, A->C",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ]
+          ],
+          "hash": "107d8f39871d53b1316b0b46729b8b84"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: A->B, A->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n2_004",
+      "n_observations": 2,
+      "n_ground_truths": 3,
+      "n_queries": 3,
+      "n_valid": 3,
+      "n_unique_valid": 3,
+      "n_unique_all": 3,
+      "n_recovered_gts": 3,
+      "parse_success_count": 3,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:0 C:0\nPerturb(B) -> A:1 B:0 C:1\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: B->A, B->C, C->A",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ],
+          "hash": "4ad58eb9ebcfc8791d2c7be27bb7e6f8"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: B->A, B->C, C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: B->A, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 2,
+            "response": "Graph: B->C, C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n2_027",
+      "n_observations": 2,
+      "n_ground_truths": 1,
+      "n_queries": 1,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_count": 1,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(B) -> A:1 B:0 C:0\nPerturb(C) -> A:1 B:0 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: B->A, C->A",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ],
+          "hash": "cd0a2b97b930ec1e1b9886d0f48acae8"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: B->A, C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n1_003",
+      "n_observations": 1,
+      "n_ground_truths": 4,
+      "n_queries": 4,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 2,
+      "n_recovered_gts": 1,
+      "parse_success_count": 4,
+      "parse_success_rate": 1.0,
+      "valid_rate": 0.25,
+      "novelty_rate": 0.5,
+      "recovery_rate": 0.25,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:1 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: A->B, B->C",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "hash": "2432b0176b3a5a525b93c7ba96455b91"
+        },
+        "first_validation_result": false,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: A->B, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: A->B",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ]
+            ]
+          },
+          {
+            "query_index": 2,
+            "response": "Graph: A->B, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 3,
+            "response": "Graph: A->B, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n2_029",
+      "n_observations": 2,
+      "n_ground_truths": 3,
+      "n_queries": 3,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 3,
+      "n_recovered_gts": 1,
+      "parse_success_count": 3,
+      "parse_success_rate": 1.0,
+      "valid_rate": 0.3333333333333333,
+      "novelty_rate": 1.0,
+      "recovery_rate": 0.3333333333333333,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(B) -> A:1 B:0 C:1\nPerturb(C) -> A:0 B:0 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: B->A, B->C",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "hash": "d6932dc8e565adb7eb1852392a186a19"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: B->A, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: A->B, A->C, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 2,
+            "response": "Graph: A->B, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n1_008",
+      "n_observations": 1,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 3,
+      "n_unique_valid": 2,
+      "n_unique_all": 4,
+      "n_recovered_gts": 2,
+      "parse_success_count": 5,
+      "parse_success_rate": 1.0,
+      "valid_rate": 0.6,
+      "novelty_rate": 0.8,
+      "recovery_rate": 0.4,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(B) -> A:1 B:0 C:1\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: B->A, B->C",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "hash": "d6932dc8e565adb7eb1852392a186a19"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: B->A, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: A->B, A->C, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "B"
+              ],
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 2,
+            "response": "Graph: B->C, C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "query_index": 3,
+            "response": "Graph: A->C, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          },
+          {
+            "query_index": 4,
+            "response": "Graph: B->C, C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "C"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n3_006",
+      "n_observations": 3,
+      "n_ground_truths": 1,
+      "n_queries": 1,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_count": 1,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:0 C:0\nPerturb(B) -> A:1 B:0 C:0\nPerturb(C) -> A:0 B:0 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: B->A",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ]
+          ],
+          "hash": "652a53d0783a8ac6205ad9630b5608e8"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: B->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n1_007",
+      "n_observations": 1,
+      "n_ground_truths": 4,
+      "n_queries": 4,
+      "n_valid": 4,
+      "n_unique_valid": 2,
+      "n_unique_all": 2,
+      "n_recovered_gts": 2,
+      "parse_success_count": 4,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.5,
+      "recovery_rate": 0.5,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(B) -> A:1 B:0 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: B->A, C->B",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "A"
+            ],
+            [
+              "C",
+              "B"
+            ]
+          ],
+          "hash": "3a510237f2b51500115ab40ce4a57bca"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: B->A, C->B",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: B->A, C->B",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "B"
+              ]
+            ]
+          },
+          {
+            "query_index": 2,
+            "response": "Graph: B->A, C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          },
+          {
+            "query_index": 3,
+            "response": "Graph: B->A, C->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "A"
+              ],
+              [
+                "C",
+                "A"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n2_002",
+      "n_observations": 2,
+      "n_ground_truths": 1,
+      "n_queries": 1,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_count": 1,
+      "parse_success_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 1.0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:0 C:0\nPerturb(B) -> A:0 B:0 C:1\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: B->C",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "hash": "f86bdf502516b9c19f03836cea93efb2"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "observation_set_id": "n3_013",
+      "n_observations": 3,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 2,
+      "n_recovered_gts": 1,
+      "parse_success_count": 2,
+      "parse_success_rate": 1.0,
+      "valid_rate": 0.5,
+      "novelty_rate": 1.0,
+      "recovery_rate": 0.5,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      },
+      "all_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ]
+          ]
+        },
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "valid_hypotheses": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "unique_graphs": [
+        {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ]
+          ]
+        }
+      ],
+      "debug_info": {
+        "first_prompt": "You are given observations from perturbation experiments on a causal system.\n\n        Semantics:\n        - When a node is perturbed, the perturbed node is 0.\n        - A node is 1 if it is a downstream descendant of the perturbed node in the causal graph.\n        - All other nodes are 0.\n\n        Nodes: A, B, C\nConstraint: The graph should have at most 3 edges.\n\n        Observations:\n        Perturb(A) -> A:0 B:0 C:1\nPerturb(B) -> A:1 B:0 C:1\nPerturb(C) -> A:0 B:0 C:0\n\n        Prior predictions (do not repeat if avoidable):\n        None\n\n        Task:\n        Output a single directed acyclic graph (DAG) over the nodes above that explains all observations.\n\n        Diversity rule:\n        - A \"diverse\" graph is any valid graph whose edge set is NOT identical to any prior prediction.\n        - Generate diverse graphs when possible to explore the solution space.\n\n        Formatting rules:\n        1) Use only the listed nodes. No self-loops. No cycles.\n        2) Respond with exactly one line:\n        - If there are edges: Graph: A->B, B->C\n        - If there are no edges: Graph: No edges",
+        "first_response": "Graph: A->C, B->A",
+        "first_parsed_hypothesis": {
+          "nodes": [
+            "A",
+            "B",
+            "C"
+          ],
+          "edges": [
+            [
+              "A",
+              "C"
+            ],
+            [
+              "B",
+              "A"
+            ]
+          ],
+          "hash": "5ad3100f82af76718106728f1e9f8472"
+        },
+        "first_validation_result": true,
+        "sample_responses": [
+          {
+            "query_index": 0,
+            "response": "Graph: A->C, B->A",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "A"
+              ]
+            ]
+          },
+          {
+            "query_index": 1,
+            "response": "Graph: A->C, B->C",
+            "parsed_nodes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "parsed_edges": [
+              [
+                "A",
+                "C"
+              ],
+              [
+                "B",
+                "C"
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
