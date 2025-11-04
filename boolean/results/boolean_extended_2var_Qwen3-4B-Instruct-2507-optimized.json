@@ -1,0 +1,1357 @@
+{
+  "run_id": "20251103_070302",
+  "llm_name": "HuggingFaceLocal(/opt/data/private/new/_HypoSpace/boolean/models/Qwen3-4B-Instruct-2507)",
+  "n_samples": 30,
+  "n_queries_per_sample": null,
+  "query_multiplier": 1.0,
+  "query_mode": "adaptive_1.0x",
+  "seed": 33550336,
+  "timestamp": "2025-11-03T07:04:18.523217",
+  "statistics": {
+    "valid_rate": {
+      "mean": 0.2695370370370371,
+      "std": 0.390577342085907,
+      "var": 0.1525506601508916,
+      "min": 0.0,
+      "max": 1.0,
+      "p_value": 0.0008592605711353383
+    },
+    "novelty_rate": {
+      "mean": 0.31534313725490193,
+      "std": 0.29806920449663743,
+      "var": 0.08884525066925827,
+      "min": 0.0,
+      "max": 1.0,
+      "p_value": 3.665819112441904e-06
+    },
+    "recovery_rate": {
+      "mean": 0.09376906318082788,
+      "std": 0.1382311397711464,
+      "var": 0.01910784800243021,
+      "min": 0.0,
+      "max": 0.5,
+      "p_value": 0.0010171164461804097
+    }
+  },
+  "token_usage": {
+    "prompt_tokens": 111601,
+    "completion_tokens": 1612,
+    "total_tokens": 113213,
+    "avg_tokens_per_sample": 3773.766666666667,
+    "avg_tokens_per_query": 3773.766666666667
+  },
+  "cost": {
+    "total_cost": 0.0,
+    "avg_cost_per_sample": 0.0,
+    "avg_cost_per_query": 0.0
+  },
+  "error_summary": {
+    "total_errors": 0,
+    "error_types": {},
+    "error_rate": 0.0
+  },
+  "per_sample_results": [
+    {
+      "observation_set_id": "n3_inputs_00_10_11_outputs_111",
+      "n_observations": 3,
+      "n_ground_truths": 6,
+      "n_queries": 6,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 1,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.16666666666666666,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "x OR y",
+        "x OR y",
+        "x OR y",
+        "x OR y",
+        "x OR y",
+        "x OR y"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "x OR y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3416,
+        "completion_tokens": 36,
+        "total_tokens": 3452
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n4_inputs_00_01_10_11_outputs_0010",
+      "n_observations": 4,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 2,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT x AND y",
+        "NOT x AND NOT y"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "NOT x AND y",
+        "NOT x AND NOT y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 1141,
+        "completion_tokens": 15,
+        "total_tokens": 1156
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_10_11_outputs_00",
+      "n_observations": 2,
+      "n_ground_truths": 9,
+      "n_queries": 9,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 2,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.2222222222222222,
+      "valid_rate": 0.1111111111111111,
+      "novelty_rate": 0.2222222222222222,
+      "recovery_rate": 0.1111111111111111,
+      "all_hypotheses": [
+        "NOT (x AND y)",
+        "NOT (x OR y)",
+        "NOT (x)",
+        "NOT (x OR y)",
+        "NOT (x AND NOT y)",
+        "NOT (x AND NOT y)",
+        "NOT (x AND NOT y)",
+        "NOT (x AND NOT y)",
+        "NOT (x AND NOT y)"
+      ],
+      "valid_hypotheses": [
+        "NOT (x)"
+      ],
+      "unique_valid_expressions": [
+        "NOT (x)"
+      ],
+      "unique_all_expressions": [
+        "NOT (x AND y)",
+        "NOT (x)"
+      ],
+      "token_usage": {
+        "prompt_tokens": 5166,
+        "completion_tokens": 84,
+        "total_tokens": 5250
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_10_11_outputs_01",
+      "n_observations": 2,
+      "n_ground_truths": 8,
+      "n_queries": 8,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 2,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.875,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.25,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT (x AND NOT y)",
+        "NOT (x AND y)",
+        "x AND NOT y",
+        "NOT (x AND y)",
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "NOT (x AND y)",
+        "x AND NOT y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 4558,
+        "completion_tokens": 63,
+        "total_tokens": 4621
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_00_01_outputs_01",
+      "n_observations": 2,
+      "n_ground_truths": 8,
+      "n_queries": 8,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 1,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.125,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT x OR y",
+        "NOT x OR y",
+        "NOT x OR y",
+        "NOT x OR y",
+        "NOT x OR y",
+        "NOT x OR y",
+        "NOT x OR y",
+        "NOT x OR y"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "NOT x OR y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 4534,
+        "completion_tokens": 56,
+        "total_tokens": 4590
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n4_inputs_00_01_10_11_outputs_0100",
+      "n_observations": 4,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT (x OR y)",
+        "NOT (x OR y)"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 1142,
+        "completion_tokens": 18,
+        "total_tokens": 1160
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_01_10_outputs_111",
+      "n_observations": 3,
+      "n_ground_truths": 6,
+      "n_queries": 6,
+      "n_valid": 6,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.16666666666666666,
+      "recovery_rate": 0.16666666666666666,
+      "all_hypotheses": [
+        "NOT x OR NOT y",
+        "NOT x OR NOT y",
+        "NOT x OR NOT y",
+        "NOT x OR NOT y",
+        "NOT x OR NOT y",
+        "NOT x OR NOT y"
+      ],
+      "valid_hypotheses": [
+        "NOT x OR NOT y",
+        "NOT x OR NOT y",
+        "NOT x OR NOT y",
+        "NOT x OR NOT y",
+        "NOT x OR NOT y",
+        "NOT x OR NOT y"
+      ],
+      "unique_valid_expressions": [
+        "NOT x OR NOT y"
+      ],
+      "unique_all_expressions": [
+        "NOT x OR NOT y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3446,
+        "completion_tokens": 48,
+        "total_tokens": 3494
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_01_10_outputs_01",
+      "n_observations": 2,
+      "n_ground_truths": 9,
+      "n_queries": 9,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 4,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.4444444444444444,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT x OR y",
+        "NOT x AND y",
+        "NOT x AND NOT y",
+        "NOT x AND NOT y",
+        "NOT x OR NOT y",
+        "NOT x AND y",
+        "NOT x AND NOT y",
+        "NOT x AND y",
+        "NOT x AND y"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "NOT x OR y",
+        "NOT x AND y",
+        "NOT x AND NOT y",
+        "NOT x OR NOT y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 5149,
+        "completion_tokens": 67,
+        "total_tokens": 5216
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n1_inputs_11_outputs_1",
+      "n_observations": 1,
+      "n_ground_truths": 20,
+      "n_queries": 20,
+      "n_valid": 15,
+      "n_unique_valid": 3,
+      "n_unique_all": 6,
+      "n_recovered_gts": 3,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.95,
+      "valid_rate": 0.75,
+      "novelty_rate": 0.3,
+      "recovery_rate": 0.15,
+      "all_hypotheses": [
+        "x AND y",
+        "NOT (x OR y)",
+        "x OR y",
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "x OR y",
+        "x AND y",
+        "x OR y",
+        "(NOT x) OR (NOT y)",
+        "(NOT x) AND (NOT y)",
+        "(NOT x) OR y",
+        "(NOT x) AND (NOT y)",
+        "x OR y",
+        "x OR y",
+        "(NOT x) AND y"
+      ],
+      "valid_hypotheses": [
+        "x AND y",
+        "x OR y",
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "x OR y",
+        "x AND y",
+        "x OR y",
+        "(NOT x) OR y",
+        "x OR y",
+        "x OR y"
+      ],
+      "unique_valid_expressions": [
+        "x AND y",
+        "x OR y",
+        "(NOT x) OR y"
+      ],
+      "unique_all_expressions": [
+        "x AND y",
+        "x OR y",
+        "(NOT x) OR (NOT y)",
+        "(NOT x) AND (NOT y)",
+        "(NOT x) OR y",
+        "(NOT x) AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 11860,
+        "completion_tokens": 147,
+        "total_tokens": 12007
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_10_11_outputs_010",
+      "n_observations": 3,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT (x AND y) OR (x AND NOT y)",
+        "NOT (x AND y) OR (x AND NOT y)"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 1125,
+        "completion_tokens": 32,
+        "total_tokens": 1157
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_01_11_outputs_010",
+      "n_observations": 3,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 1,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.5,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.5,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT (x AND y) OR (NOT x AND y)",
+        "NOT x OR y"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "NOT x OR y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 1125,
+        "completion_tokens": 23,
+        "total_tokens": 1148
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_01_10_outputs_100",
+      "n_observations": 3,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT (x OR y)",
+        "NOT (x OR y)"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 1118,
+        "completion_tokens": 18,
+        "total_tokens": 1136
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n1_inputs_10_outputs_1",
+      "n_observations": 1,
+      "n_ground_truths": 17,
+      "n_queries": 17,
+      "n_valid": 17,
+      "n_unique_valid": 4,
+      "n_unique_all": 4,
+      "n_recovered_gts": 4,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.23529411764705882,
+      "recovery_rate": 0.23529411764705882,
+      "all_hypotheses": [
+        "NOT y",
+        "x AND NOT y",
+        "x OR NOT y",
+        "NOT x OR NOT y",
+        "x AND NOT y",
+        "x OR NOT y",
+        "NOT y",
+        "NOT y",
+        "NOT y",
+        "NOT y",
+        "NOT y",
+        "NOT y",
+        "NOT y",
+        "x OR NOT y",
+        "x OR NOT y",
+        "x AND NOT y",
+        "NOT y"
+      ],
+      "valid_hypotheses": [
+        "NOT y",
+        "x AND NOT y",
+        "x OR NOT y",
+        "NOT x OR NOT y",
+        "x AND NOT y",
+        "x OR NOT y",
+        "NOT y",
+        "NOT y",
+        "NOT y",
+        "NOT y",
+        "NOT y",
+        "NOT y",
+        "NOT y",
+        "x OR NOT y",
+        "x OR NOT y",
+        "x AND NOT y",
+        "NOT y"
+      ],
+      "unique_valid_expressions": [
+        "NOT y",
+        "x AND NOT y",
+        "x OR NOT y",
+        "NOT x OR NOT y"
+      ],
+      "unique_all_expressions": [
+        "NOT y",
+        "x AND NOT y",
+        "x OR NOT y",
+        "NOT x OR NOT y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 9847,
+        "completion_tokens": 102,
+        "total_tokens": 9949
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_00_10_outputs_00",
+      "n_observations": 2,
+      "n_ground_truths": 12,
+      "n_queries": 12,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 3,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.5,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.25,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT x",
+        "NOT y",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x AND y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x AND y)",
+        "NOT (x AND y)",
+        "NOT (x OR y)",
+        "NOT (x AND y)"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "NOT x",
+        "NOT y",
+        "NOT (x AND y)"
+      ],
+      "token_usage": {
+        "prompt_tokens": 6971,
+        "completion_tokens": 100,
+        "total_tokens": 7071
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_00_11_outputs_01",
+      "n_observations": 2,
+      "n_ground_truths": 12,
+      "n_queries": 12,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "(x AND y) OR (NOT x AND NOT y)",
+        "(x AND y) OR (NOT x AND NOT y)",
+        "(x AND y) OR (NOT x AND NOT y)",
+        "(x AND y) OR (NOT x AND NOT y)",
+        "(x AND y) OR (NOT x AND NOT y)",
+        "(x AND y) OR (NOT x AND NOT y)",
+        "(x AND y) OR (NOT x AND NOT y)",
+        "(x AND y) OR (NOT x AND NOT y)",
+        "(x AND y) OR (NOT x AND NOT y)",
+        "(x AND y) OR (NOT x AND NOT y)",
+        "(x AND y) OR (NOT x AND NOT y)",
+        "(x AND y) OR (NOT x AND NOT y)"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 7496,
+        "completion_tokens": 192,
+        "total_tokens": 7688
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_01_10_outputs_000",
+      "n_observations": 3,
+      "n_ground_truths": 6,
+      "n_queries": 6,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 3446,
+        "completion_tokens": 54,
+        "total_tokens": 3500
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_01_10_outputs_110",
+      "n_observations": 3,
+      "n_ground_truths": 3,
+      "n_queries": 3,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 2,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 0.3333333333333333,
+      "novelty_rate": 0.6666666666666666,
+      "recovery_rate": 0.3333333333333333,
+      "all_hypotheses": [
+        "(NOT x) OR y",
+        "(NOT x) OR (NOT y)",
+        "(NOT x) OR (NOT y)"
+      ],
+      "valid_hypotheses": [
+        "(NOT x) OR y"
+      ],
+      "unique_valid_expressions": [
+        "(NOT x) OR y"
+      ],
+      "unique_all_expressions": [
+        "(NOT x) OR y",
+        "(NOT x) OR (NOT y)"
+      ],
+      "token_usage": {
+        "prompt_tokens": 1693,
+        "completion_tokens": 33,
+        "total_tokens": 1726
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_01_11_outputs_110",
+      "n_observations": 3,
+      "n_ground_truths": 3,
+      "n_queries": 3,
+      "n_valid": 3,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.3333333333333333,
+      "recovery_rate": 0.3333333333333333,
+      "all_hypotheses": [
+        "NOT (x AND y)",
+        "NOT (x AND y)",
+        "NOT (x AND y)"
+      ],
+      "valid_hypotheses": [
+        "NOT (x AND y)",
+        "NOT (x AND y)",
+        "NOT (x AND y)"
+      ],
+      "unique_valid_expressions": [
+        "NOT (x AND y)"
+      ],
+      "unique_all_expressions": [
+        "NOT (x AND y)"
+      ],
+      "token_usage": {
+        "prompt_tokens": 1688,
+        "completion_tokens": 27,
+        "total_tokens": 1715
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_01_10_11_outputs_110",
+      "n_observations": 3,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.5,
+      "valid_rate": 0.5,
+      "novelty_rate": 0.5,
+      "recovery_rate": 0.5,
+      "all_hypotheses": [
+        "NOT (x AND y)",
+        "NOT (x OR y)"
+      ],
+      "valid_hypotheses": [
+        "NOT (x AND y)"
+      ],
+      "unique_valid_expressions": [
+        "NOT (x AND y)"
+      ],
+      "unique_all_expressions": [
+        "NOT (x AND y)"
+      ],
+      "token_usage": {
+        "prompt_tokens": 1118,
+        "completion_tokens": 18,
+        "total_tokens": 1136
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n4_inputs_00_01_10_11_outputs_1000",
+      "n_observations": 4,
+      "n_ground_truths": 2,
+      "n_queries": 2,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 2,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT x OR NOT y",
+        "NOT (x AND y)"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "NOT x OR NOT y",
+        "NOT (x AND y)"
+      ],
+      "token_usage": {
+        "prompt_tokens": 1142,
+        "completion_tokens": 17,
+        "total_tokens": 1159
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n4_inputs_00_01_10_11_outputs_1010",
+      "n_observations": 4,
+      "n_ground_truths": 1,
+      "n_queries": 1,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 1,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 1.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT (x AND y)"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "NOT (x AND y)"
+      ],
+      "token_usage": {
+        "prompt_tokens": 568,
+        "completion_tokens": 9,
+        "total_tokens": 577
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_01_10_outputs_00",
+      "n_observations": 2,
+      "n_ground_truths": 8,
+      "n_queries": 8,
+      "n_valid": 1,
+      "n_unique_valid": 1,
+      "n_unique_all": 3,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.375,
+      "valid_rate": 0.125,
+      "novelty_rate": 0.375,
+      "recovery_rate": 0.125,
+      "all_hypotheses": [
+        "NOT x OR NOT y",
+        "NOT (x AND y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "x AND y",
+        "NOT (x AND NOT y)",
+        "NOT (x AND NOT y)",
+        "NOT (x OR NOT y)"
+      ],
+      "valid_hypotheses": [
+        "x AND y"
+      ],
+      "unique_valid_expressions": [
+        "x AND y"
+      ],
+      "unique_all_expressions": [
+        "NOT x OR NOT y",
+        "NOT (x AND y)",
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 4559,
+        "completion_tokens": 71,
+        "total_tokens": 4630
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_00_10_outputs_10",
+      "n_observations": 2,
+      "n_ground_truths": 5,
+      "n_queries": 5,
+      "n_valid": 3,
+      "n_unique_valid": 2,
+      "n_unique_all": 4,
+      "n_recovered_gts": 2,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 0.6,
+      "novelty_rate": 0.8,
+      "recovery_rate": 0.4,
+      "all_hypotheses": [
+        "NOT x OR y",
+        "NOT x AND NOT y",
+        "NOT x AND y",
+        "NOT x AND NOT y",
+        "NOT x OR NOT y"
+      ],
+      "valid_hypotheses": [
+        "NOT x OR y",
+        "NOT x AND NOT y",
+        "NOT x AND NOT y"
+      ],
+      "unique_valid_expressions": [
+        "NOT x OR y",
+        "NOT x AND NOT y"
+      ],
+      "unique_all_expressions": [
+        "NOT x OR y",
+        "NOT x AND NOT y",
+        "NOT x AND y",
+        "NOT x OR NOT y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 2786,
+        "completion_tokens": 38,
+        "total_tokens": 2824
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_00_01_outputs_00",
+      "n_observations": 2,
+      "n_ground_truths": 12,
+      "n_queries": 12,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 0,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.0,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)",
+        "NOT (x OR y)"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [],
+      "token_usage": {
+        "prompt_tokens": 7034,
+        "completion_tokens": 108,
+        "total_tokens": 7142
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_01_11_outputs_111",
+      "n_observations": 3,
+      "n_ground_truths": 6,
+      "n_queries": 6,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 1,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.16666666666666666,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "x OR y",
+        "x OR y",
+        "x OR y",
+        "x OR y",
+        "x OR y",
+        "x OR y"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "x OR y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3416,
+        "completion_tokens": 36,
+        "total_tokens": 3452
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_00_01_11_outputs_001",
+      "n_observations": 3,
+      "n_ground_truths": 6,
+      "n_queries": 6,
+      "n_valid": 4,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 0.6666666666666666,
+      "valid_rate": 0.6666666666666666,
+      "novelty_rate": 0.16666666666666666,
+      "recovery_rate": 0.16666666666666666,
+      "all_hypotheses": [
+        "(x AND y) OR (NOT x AND NOT y)",
+        "(x AND y) OR (NOT x AND NOT y)",
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "x AND y"
+      ],
+      "valid_hypotheses": [
+        "x AND y",
+        "x AND y",
+        "x AND y",
+        "x AND y"
+      ],
+      "unique_valid_expressions": [
+        "x AND y"
+      ],
+      "unique_all_expressions": [
+        "x AND y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3497,
+        "completion_tokens": 56,
+        "total_tokens": 3553
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n2_inputs_00_10_outputs_01",
+      "n_observations": 2,
+      "n_ground_truths": 8,
+      "n_queries": 8,
+      "n_valid": 8,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.125,
+      "recovery_rate": 0.125,
+      "all_hypotheses": [
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y"
+      ],
+      "valid_hypotheses": [
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y",
+        "x AND NOT y"
+      ],
+      "unique_valid_expressions": [
+        "x AND NOT y"
+      ],
+      "unique_all_expressions": [
+        "x AND NOT y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 4534,
+        "completion_tokens": 56,
+        "total_tokens": 4590
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n4_inputs_00_01_10_11_outputs_0101",
+      "n_observations": 4,
+      "n_ground_truths": 4,
+      "n_queries": 4,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 1,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.25,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "NOT x OR y",
+        "NOT x OR y",
+        "NOT x OR y",
+        "NOT x OR y"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "NOT x OR y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 2308,
+        "completion_tokens": 28,
+        "total_tokens": 2336
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n3_inputs_01_10_11_outputs_111",
+      "n_observations": 3,
+      "n_ground_truths": 6,
+      "n_queries": 6,
+      "n_valid": 6,
+      "n_unique_valid": 1,
+      "n_unique_all": 1,
+      "n_recovered_gts": 1,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 1.0,
+      "novelty_rate": 0.16666666666666666,
+      "recovery_rate": 0.16666666666666666,
+      "all_hypotheses": [
+        "x OR y",
+        "x OR y",
+        "x OR y",
+        "x OR y",
+        "x OR y",
+        "x OR y"
+      ],
+      "valid_hypotheses": [
+        "x OR y",
+        "x OR y",
+        "x OR y",
+        "x OR y",
+        "x OR y",
+        "x OR y"
+      ],
+      "unique_valid_expressions": [
+        "x OR y"
+      ],
+      "unique_all_expressions": [
+        "x OR y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 3416,
+        "completion_tokens": 36,
+        "total_tokens": 3452
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    },
+    {
+      "observation_set_id": "n4_inputs_00_01_10_11_outputs_1111",
+      "n_observations": 4,
+      "n_ground_truths": 4,
+      "n_queries": 4,
+      "n_valid": 0,
+      "n_unique_valid": 0,
+      "n_unique_all": 1,
+      "n_recovered_gts": 0,
+      "parse_success_rate": 1.0,
+      "in_space_rate": 1.0,
+      "valid_rate": 0.0,
+      "novelty_rate": 0.25,
+      "recovery_rate": 0.0,
+      "all_hypotheses": [
+        "x OR y",
+        "x OR y",
+        "x OR y",
+        "x OR y"
+      ],
+      "valid_hypotheses": [],
+      "unique_valid_expressions": [],
+      "unique_all_expressions": [
+        "x OR y"
+      ],
+      "token_usage": {
+        "prompt_tokens": 2302,
+        "completion_tokens": 24,
+        "total_tokens": 2326
+      },
+      "cost": 0.0,
+      "errors": [],
+      "error_summary": {
+        "total_errors": 0,
+        "error_types": {}
+      }
+    }
+  ]
+}

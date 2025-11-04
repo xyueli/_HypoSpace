@@ -1,0 +1,13 @@
+llm:
+  type: huggingface_local
+  models:
+    huggingface_local: "/opt/data/private/new/_HypoSpace/boolean/models/Qwen3-4B-Instruct-2507"
+  model_path: "/opt/data/private/new/_HypoSpace/boolean/models/Qwen3-4B-Instruct-2507"
+  temperature: 0.7
+  max_tokens: 2048
+  device: "auto"
+
+benchmark:
+  checkpoint: "checkpoints"
+  verbose: true
+  output_pattern: "results/{dataset_name}_{model}_{timestamp}.json"
